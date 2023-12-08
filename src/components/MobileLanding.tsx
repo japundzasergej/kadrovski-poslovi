@@ -20,7 +20,7 @@ const MobileLanding = () => {
           >
             Контакт{' '}
             <span>
-              <GoChevronRight className="h-6 w-6 group-hover:rotate-90 duration-500" />
+              <GoChevronRight className="mt-2 h-6 w-6 group-hover:rotate-90 duration-500" />
             </span>
           </AnchorLink>
         </div>
