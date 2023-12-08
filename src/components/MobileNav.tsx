@@ -7,7 +7,7 @@ const MobileNav = () => {
       <span className="italic text-4xl md:text-5xl w-1/2 mx-auto border-b-2 border-black py-1">
         Ђорђевић
       </span>{' '}
-      <span className="font-light text-xl mx-auto">{title.toLowerCase()}</span>
+      <span className="font-light md:text-xl text-base mx-auto">{title.toLowerCase()}</span>
     </p>
   );
   const mobileNav = (
