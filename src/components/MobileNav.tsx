@@ -2,7 +2,7 @@ import nav from '../assets/navbar.png';
 
 const MobileNav = () => {
   const desktopNav = (
-    <nav className="z-40 fixed flex flex-col h-[150px] w-full justify-center py-24 bg-white shadow-sm shadow-black">
+    <nav className="z-40 fixed flex flex-col h-[100px] w-full justify-center py-20 bg-white shadow-sm shadow-black">
       <div className="pl-32">
         <img src={nav} alt="navbar" className="w-18 h-16" />
       </div>

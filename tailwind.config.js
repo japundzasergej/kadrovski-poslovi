@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         tenor: 'Tenor Sans, sans-serif',
       },
+      screens: {
+        mini: '414px',
+        micro: '360px'
+      }
     },
   },
   plugins: [],
