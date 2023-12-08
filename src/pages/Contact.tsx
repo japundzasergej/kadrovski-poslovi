@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <section className="lg:py-36 py-24 font-tenor md:pl-2" id="contact">
       <article className="flex justify-center flex-col items-center">
-        <h1 className="md:text-6xl text-4xl lg:pt-24 lg:pb-24 pb-12">Контакт</h1>
+        <h1 className="md:text-6xl text-4xl lg:pt-24 lg:pb-24 pb-4 md:pb-8">Контакт</h1>
         <form
           action="https://formspree.io/f/xbjvndqd"
           method="POST"
