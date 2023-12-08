@@ -3,8 +3,8 @@ import nav from '../assets/navbar.png';
 const DesktopNav = () => {
   const title = 'Кадровски Послови';
   const desktopNav = (
-    <nav className="z-40 fixed flex h-[120px] w-full justify-between py-8 text-xl bg-white shadow-sm shadow-black">
-      <div>
+    <nav className="z-40 fixed flex h-[120px] w-full justify-start py-8 text-xl bg-white shadow-sm shadow-black">
+      <div className='absolute -translate-y-[20px] translate-x-[28px]'>
         <img src={nav} alt="navbar" className="w-18 h-16" />
       </div>
       <div className="flex flex-col justify-center text-center">
