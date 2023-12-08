@@ -8,6 +8,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 
 const Slider = () => {
   const isDesktop = useMediaQuery('(min-width: 1040px)');
+  const maxWidth = isDesktop ? 'max-w-full' : 'max-w-[500px]'
   return (
     <HeroSlider
       height={isDesktop ? '100vh' : '20vh'}
@@ -20,7 +21,7 @@ const Slider = () => {
         slidingAnimation: 'fade',
       }}
       controller={{
-        initialSlide: 1,
+        initialSlide: 4,
       }}
       accessibility={{
         shouldSlideOnArrowKeypress: true,
@@ -31,28 +32,28 @@ const Slider = () => {
       className={`${!isDesktop && 'border-b border-black'}`}
     >
       <Slide
-        className="bg-cover"
+        className={maxWidth}
         background={{
           backgroundImageSrc: legal1,
           backgroundImageAlt: 'legal1',
         }}
       />
       <Slide
-        className="bg-cover"
+        className={maxWidth}
         background={{
           backgroundImageSrc: legal2,
           backgroundImageAlt: 'legal2',
         }}
       />
       <Slide
-        className="bg-cover"
+        className={maxWidth}
         background={{
           backgroundImageSrc: legal3,
           backgroundImageAlt: 'legal3',
         }}
       />
       <Slide
-        className="bg-cover"
+        className={maxWidth}
         background={{
           backgroundImageSrc: legal4,
           backgroundImageAlt: 'legal4',
