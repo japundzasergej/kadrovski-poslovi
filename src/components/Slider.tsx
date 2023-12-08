@@ -7,7 +7,7 @@ import legal4 from '../assets/legal4.jpg';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 const Slider = () => {
-  const isDesktop = useMediaQuery('(min-width:1040px)');
+  const isDesktop = useMediaQuery('(min-width: 1040px)');
   return (
     <HeroSlider
       height={isDesktop ? '100vh' : '20vh'}
@@ -25,26 +25,37 @@ const Slider = () => {
       accessibility={{
         shouldSlideOnArrowKeypress: true,
       }}
+      manager={{
+        isMobile: !isDesktop ? false : true,
+      }}
       className={`${!isDesktop && 'border-b border-black'}`}
     >
       <Slide
         background={{
           backgroundImageSrc: legal1,
+          backgroundImageAlt: 'legal1',
+          backgroundImageSizes: '100%',
         }}
       ></Slide>
       <Slide
         background={{
           backgroundImageSrc: legal2,
+          backgroundImageAlt: 'legal2',
+          backgroundImageSizes: '100%',
         }}
       />
       <Slide
         background={{
           backgroundImageSrc: legal3,
+          backgroundImageAlt: 'legal3',
+          backgroundImageSizes: '100%',
         }}
       />
       <Slide
         background={{
           backgroundImageSrc: legal4,
+          backgroundImageAlt: 'legal4',
+          backgroundImageSizes: '100%',
         }}
       />
     </HeroSlider>

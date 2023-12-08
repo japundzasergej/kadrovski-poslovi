@@ -4,14 +4,14 @@ import Slider from './Slider';
 
 const MobileLanding = () => {
   const mobileLanding = (
-    <section className="flex flex-col-reverse z-0 font-bold font-tenor w-full pt-40 mini:pt-44 micro:pt-48">
-      <div className="w-full flex flex-col text-center justify-center items-center text-4xl md:text-8xl px-12">
+    <section className="flex flex-col-reverse z-0 font-bold font-tenor border-black border-b-6 w-full pt-48">
+      <div className="w-full flex flex-col text-center justify-center items-center text-4xl md:text-8xl px-12 md:pb-32 pb-6 ">
         <h1 className="pt-28 pb-6">
           Кадровски Послови <span className="text-slate-600">"Ђорђевић"</span>
         </h1>
-        <div className='mini:pb-40 micro:pb-28'>
+        <div className='pb-28'>
           <AnchorLink
-            className="border-2 border-black px-6 py-2 rounded-3xl md:text-3xl text-lg flex mx-auto group focus:bg-black focus:text-white font-black transition duration-200 cursor-pointer mb-20"
+            className="border-2 border-black px-6 py-2 rounded-3xl md:text-3xl text-lg flex mx-auto group hover:bg-black hover:text-white font-black transition duration-200 cursor-pointer mb-20"
             href="#contact"
           >
             Контакт{' '}

@@ -6,8 +6,8 @@ const DesktopLanding = () => {
   const desktopLanding = (
     <section className="flex z-0 font-bold font-tenor">
       <div className="w-1/2 flex flex-col text-center justify-center items-center text-8xl">
-        <h1>
-          Кадровски Послови <span className="text-slate-600">"Ђорђевић"</span>
+        <h1 className='flex flex-col'>
+          Кадровски Послови <span className="text-slate-600">Ђорђевић</span>
         </h1>
         <div className="bg-black w-[600px] h-[2px] my-10"></div>
         <div>

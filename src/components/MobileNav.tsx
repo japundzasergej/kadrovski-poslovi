@@ -11,7 +11,7 @@ const MobileNav = () => {
     </p>
   );
   const desktopNav = (
-    <nav className="z-40 fixed flex h-[100px] w-full justify-center items-center py-20 bg-white shadow-sm shadow-black">
+    <nav className="z-40 fixed flex h-[10px] w-full justify-center items-center py-20 bg-white shadow-sm shadow-black">
       <div className="absolute -translate-x-[120px] md:-translate-x-[140px]">
         <img src={nav} alt="navbar" className="w-18 h-16" />
       </div>
