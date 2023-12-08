@@ -42,14 +42,16 @@ const Contact = () => {
   };
 
   return (
-    <section className="lg:py-36 py-24 font-tenor md:pl-2" id="contact">
+    <section className="py-24 font-tenor md:pl-2" id="contact">
       <article className="flex justify-center flex-col items-center">
-        <h1 className="md:text-6xl text-4xl lg:pt-24 lg:pb-24 pb-4 md:pb-8">Контакт</h1>
+        <h1 className="md:text-6xl text-4xl lg:pt-24 lg:pb-24 pb-4 md:pb-8">
+          Контакт
+        </h1>
         <form
           action="https://formspree.io/f/xbjvndqd"
           method="POST"
           target="_blank"
-          className="flex flex-col text-2xl min-w-[90%]"
+          className="flex flex-col text-2xl min-w-[90%] lg:min-w-[50%]"
           onSubmit={(e) => handleSubmit(e)}
           autoComplete="on"
         >
@@ -59,7 +61,7 @@ const Contact = () => {
           <input
             type="text"
             id="name"
-            className="px-2 md:py-4 border-2"
+            className="px-2 md:py-4 border-2 rounded-md"
             {...register('name', {
               required: true,
               minLength: 3,
@@ -80,7 +82,7 @@ const Contact = () => {
           <input
             type="text"
             id="email"
-            className="md:py-4 border-2"
+            className="md:py-4 border-2 rounded-md"
             {...register('email', {
               required: true,
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -99,7 +101,7 @@ const Contact = () => {
           </label>
           <input
             type="title"
-            className="md:py-4 border-2"
+            className="md:py-4 border-2 rounded-md"
             {...register('title', {
               required: true,
             })}
@@ -122,7 +124,7 @@ const Contact = () => {
             })}
             value={user.message}
             onChange={handleChange}
-            className="border-2"
+            className="border-2 rounded-md"
           ></textarea>
           {errors.message && (
             <p className="text-red-700 mt-2">
@@ -131,7 +133,9 @@ const Contact = () => {
           )}
           <button
             type="submit"
-            className={`mt-12 bg-button py-2 md:py-[0.75rem] text-white rounded-3xl hover:opacity-90 transition duration-300 shadow-sm shadow-black ${isDesktop ? 'text-3xl' : 'md:text-3xl text-xl'}`}
+            className={`mt-12 bg-button py-2 md:py-[0.75rem] text-white rounded-3xl hover:opacity-90 transition duration-300 shadow-sm shadow-black ${
+              isDesktop ? 'text-3xl' : 'md:text-3xl text-xl'
+            }`}
             disabled={isSubmitting}
           >
             Пошаљи
