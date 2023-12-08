@@ -35,7 +35,7 @@ const MobileNav = () => {
             </svg>
             anaselma.djordjevic@gmail.com
           </p>
-          <a className="pl-2 flex" href="tel+381638020371">
+          <a className="pl-2 flex" href="tel:+381638020371">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
