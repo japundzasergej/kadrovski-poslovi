@@ -7,7 +7,7 @@ const MobileLanding = () => {
     <section className="flex flex-col-reverse z-0 font-bold font-tenor border-black border-b-6 w-full pt-48">
       <div className="w-full flex flex-col text-center justify-center items-center text-4xl md:text-8xl px-12 md:pb-32 pb-6 ">
         <h1 className="pt-28 pb-6">
-          Кадровски Послови <span className="text-slate-600">"Ђорђевић"</span>
+          Кадровски Послови <span className="text-slate-600">Ђорђевић</span>
         </h1>
         <div className='pb-28'>
           <AnchorLink
