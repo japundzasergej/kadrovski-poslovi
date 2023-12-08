@@ -1,9 +1,5 @@
 import HeroSlider from 'hero-slider/dist/HeroSlider';
 import { Slide } from 'hero-slider';
-import legal1 from '../assets/legal1.jpg';
-import legal2 from '../assets/legal2.jpg';
-import legal3 from '../assets/legal3.jpg';
-import legal4 from '../assets/legal4.jpg';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 const Slider = () => {
