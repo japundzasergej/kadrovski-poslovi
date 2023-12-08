@@ -8,11 +8,10 @@ import useMediaQuery from '../hooks/useMediaQuery';
 
 const Slider = () => {
   const isDesktop = useMediaQuery('(min-width: 1040px)');
-  const maxWidth = isDesktop ? 'max-w-full' : 'max-w-[500px]'
+  const maxWidth = isDesktop ? 'max-w-full' : 'max-w-[500px] h-20vh'
   return (
     <HeroSlider
       height={isDesktop ? '100vh' : '20vh'}
-      width={'100%'}
       autoplay={{
         autoplayDuration: 4000,
         autoplayDebounce: 2000,
