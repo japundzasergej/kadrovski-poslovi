@@ -11,6 +11,7 @@ const Slider = () => {
   return (
     <HeroSlider
       height={isDesktop ? '100vh' : '20vh'}
+      width={'100%'}
       autoplay={{
         autoplayDuration: 4000,
         autoplayDebounce: 2000,
@@ -23,9 +24,6 @@ const Slider = () => {
       }}
       accessibility={{
         shouldSlideOnArrowKeypress: true,
-      }}
-      manager={{
-        isMobile: isDesktop ? true : false,
       }}
       className={`${!isDesktop && 'border-b border-black'}`}
     >
