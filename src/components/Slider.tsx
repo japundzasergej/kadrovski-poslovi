@@ -36,7 +36,6 @@ const Slider = () => {
           backgroundImageAlt: 'legal1',
           backgroundImageSizes: '100%',
         }}
-        shouldRenderMask = {isDesktop ? true : false}
       />
       <Slide
         background={{

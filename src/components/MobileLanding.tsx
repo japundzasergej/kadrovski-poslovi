@@ -21,7 +21,7 @@ const MobileLanding = () => {
           </AnchorLink>
         </div>
       </div>
-      <div className="w-full mt-[-30px]">
+      <div className="mt-[-30px]">
         <Slider />
       </div>
     </section>
