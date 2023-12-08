@@ -15,12 +15,12 @@ const MobileLanding = () => {
         </h1>
         <div className="pb-28 pt-8">
           <AnchorLink
-            className="border-2 border-black px-6 py-2 rounded-3xl md:text-3xl text-lg flex mx-auto group hover:bg-black hover:text-white font-black transition duration-200 cursor-pointer mb-20"
+            className="border-2 border-black px-6 py-2 rounded-3xl md:text-4xl text-lg flex mx-auto group hover:bg-black hover:text-white font-black transition duration-200 cursor-pointer mb-20"
             href="#contact"
           >
             Контакт{' '}
             <span>
-              <GoChevronRight className="mt-2 h-6 w-6 group-hover:rotate-90 duration-500" />
+              <GoChevronRight className="mt-1 md:h-8 md:w-8 h-[1.25rem] w-[1.25rem] group-hover:rotate-90 duration-500" />
             </span>
           </AnchorLink>
         </div>
