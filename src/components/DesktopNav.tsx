@@ -1,16 +1,19 @@
 import nav from '../assets/navbar.png';
 
 const DesktopNav = () => {
+  const title = 'Кадровски Послови';
   const desktopNav = (
-    <nav className="z-40 fixed flex h-[100px] w-full justify-between py-6 text-xl bg-white shadow-sm shadow-black">
+    <nav className="z-40 fixed flex h-[120px] w-full justify-between py-8 text-xl bg-white shadow-sm shadow-black">
       <div>
         <img src={nav} alt="navbar" className="w-18 h-16" />
       </div>
       <div className="flex flex-col justify-center text-center">
         <div className="mt-2 text-2xl font-semibold">
-          <h1>Кадровски Послови "Ђорђевић"</h1>
+          <p className="flex flex-col">
+            <span className='italic text-4xl w-1/2 mx-auto border-b-2 border-black py-1'>Ђорђевић</span> <span className='font-light'>{title.toLowerCase()}</span>
+          </p>
         </div>
-        <div className="flex text-base">
+        <div className="flex text-base pb-4">
           <p className="border-black border-r px-4 flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"

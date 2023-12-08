@@ -1,15 +1,22 @@
 import nav from '../assets/navbar.png';
 
 const MobileNav = () => {
+  const title = 'Кадровски Послови';
+  const name = (
+    <p className="flex flex-col">
+      <span className="italic text-4xl w-1/2 mx-auto border-b-2 border-black py-1">
+        Ђорђевић
+      </span>{' '}
+      <span className="font-light text-lg mx-auto">{title.toLowerCase()}</span>
+    </p>
+  );
   const desktopNav = (
-    <nav className="z-40 fixed flex flex-col h-[100px] w-full justify-center py-20 bg-white shadow-sm shadow-black">
-      <div className="pl-32">
+    <nav className="z-40 fixed flex h-[100px] w-full justify-center items-center py-20 bg-white shadow-sm shadow-black">
+      <div className="absolute -translate-x-[120px] md:-translate-x-[140px]">
         <img src={nav} alt="navbar" className="w-18 h-16" />
       </div>
       <div className="flex flex-col text-start px-4">
-        <div className="mt-1 md:text-4xl text-xl font-semibold">
-          <h1>Кадровски Послови "Ђорђевић"</h1>
-        </div>
+        <div className="mt-1 md:text-4xl text-xl font-semibold">{name}</div>
         <div className="flex md:text-base text-sm">
           <p className="border-black border-r pr-2 flex">
             <svg

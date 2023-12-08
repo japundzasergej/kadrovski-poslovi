@@ -1,5 +1,6 @@
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 import Landing from './pages/Landing';
 import Navbar from './pages/Navbar';
 
@@ -15,6 +16,9 @@ const App = () => {
         <div className="bg-black h-[2px] w-[120%]"></div>
         <Contact />
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 };
