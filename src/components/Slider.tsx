@@ -30,34 +30,20 @@ const Slider = () => {
       }}
       className={`${!isDesktop && 'border-b border-black'}`}
     >
-      <Slide
-        className={maxWidth}
-        background={{
-          backgroundImageSrc: legal1,
-          backgroundImageAlt: 'legal1',
-        }}
-      />
-      <Slide
-        className={maxWidth}
-        background={{
-          backgroundImageSrc: legal2,
-          backgroundImageAlt: 'legal2',
-        }}
-      />
-      <Slide
-        className={maxWidth}
-        background={{
-          backgroundImageSrc: legal3,
-          backgroundImageAlt: 'legal3',
-        }}
-      />
-      <Slide
-        className={maxWidth}
-        background={{
-          backgroundImageSrc: legal4,
-          backgroundImageAlt: 'legal4',
-        }}
-      />
+      {[1, 2, 3, 4].map((item) => {
+        const src = 'src/assets/legal' + item + '.jpg';
+        return (
+          <div key={item}>
+            <Slide
+              className={maxWidth}
+              background={{
+                backgroundImageSrc: src,
+                backgroundImageAlt: 'legal' + item,
+              }}
+            />
+          </div>
+        );
+      })}
     </HeroSlider>
   );
 };
