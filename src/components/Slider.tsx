@@ -31,31 +31,31 @@ const Slider = () => {
       className={`${!isDesktop && 'border-b border-black'}`}
     >
       <Slide
+        className="bg-cover"
         background={{
           backgroundImageSrc: legal1,
           backgroundImageAlt: 'legal1',
-          backgroundImageSizes: '100%',
         }}
       />
       <Slide
+        className="bg-cover"
         background={{
           backgroundImageSrc: legal2,
           backgroundImageAlt: 'legal2',
-          backgroundImageSizes: '100%',
         }}
       />
       <Slide
+        className="bg-cover"
         background={{
           backgroundImageSrc: legal3,
           backgroundImageAlt: 'legal3',
-          backgroundImageSizes: '100%',
         }}
       />
       <Slide
+        className="bg-cover"
         background={{
           backgroundImageSrc: legal4,
           backgroundImageAlt: 'legal4',
-          backgroundImageSizes: '100%',
         }}
       />
     </HeroSlider>
