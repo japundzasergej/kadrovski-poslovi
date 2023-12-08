@@ -20,7 +20,7 @@ const Slider = () => {
         slidingAnimation: 'fade',
       }}
       controller={{
-        initialSlide: 1,
+        initialSlide: 4,
       }}
       accessibility={{
         shouldSlideOnArrowKeypress: true,

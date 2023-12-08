@@ -3,11 +3,13 @@ import { GoChevronRight } from 'react-icons/go';
 import Slider from './Slider';
 
 const DesktopLanding = () => {
+  const title = 'Кадровски Послови';
   const desktopLanding = (
     <section className="flex z-0 font-bold font-tenor">
-      <div className="w-1/2 flex flex-col text-center justify-center items-center text-8xl">
-        <h1 className='flex flex-col'>
-          Кадровски Послови <span className="text-slate-600">Ђорђевић</span>
+      <div className="w-1/2 flex flex-col text-center justify-center items-center pt-36">
+        <h1 className="flex flex-col-reverse text-4xl">
+          {title.toLowerCase()}
+          <span className="text-slate-600 text-8xl italic py-2">Ђорђевић</span>
         </h1>
         <div className="bg-black w-[600px] h-[2px] my-10"></div>
         <div>
