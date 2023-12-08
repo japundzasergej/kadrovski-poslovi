@@ -131,7 +131,7 @@ const Contact = () => {
           )}
           <button
             type="submit"
-            className="mt-12 bg-button py-4 text-white rounded-3xl hover:opacity-90 transition duration-300 shadow-sm shadow-black"
+            className={`mt-12 bg-button py-2 md:py-[0.75rem] text-white rounded-3xl hover:opacity-90 transition duration-300 shadow-sm shadow-black ${isDesktop ? 'text-3xl' : 'md:text-3xl text-xl'}`}
             disabled={isSubmitting}
           >
             Пошаљи
