@@ -13,7 +13,7 @@ const DesktopNav = () => {
             <span className='italic text-4xl w-1/2 mx-auto border-b-2 border-black py-1'>Ђорђевић</span> <span className='font-light'>{title.toLowerCase()}</span>
           </p>
         </div>
-        <div className="flex text-base pb-4">
+        <div className="flex text-base pt-2">
           <p className="border-black border-r px-4 flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"

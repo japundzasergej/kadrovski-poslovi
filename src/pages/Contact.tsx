@@ -44,12 +44,12 @@ const Contact = () => {
   return (
     <section className="lg:py-36 py-24 font-tenor md:pl-2" id="contact">
       <article className="flex justify-center flex-col items-center">
-        <h1 className="text-6xl lg:pt-24 lg:pb-24 pb-12">Контакт</h1>
+        <h1 className="md:text-6xl text-4xl lg:pt-24 lg:pb-24 pb-12">Контакт</h1>
         <form
           action="https://formspree.io/f/xbjvndqd"
           method="POST"
           target="_blank"
-          className="flex flex-col text-2xl"
+          className="flex flex-col text-2xl min-w-[90%]"
           onSubmit={(e) => handleSubmit(e)}
           autoComplete="on"
         >
@@ -59,7 +59,7 @@ const Contact = () => {
           <input
             type="text"
             id="name"
-            className="px-2 md:py-4 md:w-[600px] w-[340px] border-2"
+            className="px-2 md:py-4 border-2"
             {...register('name', {
               required: true,
               minLength: 3,

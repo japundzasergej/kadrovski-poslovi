@@ -3,9 +3,9 @@ const MobileAbout = () => {
     <section className="flex">
       <article>
         <div className="bg-black h-[200px] items-center text-start text-white flex md:text-5xl text-3xl font-tenor">
-          <h1 className="ml-4">Услуге које пружамо</h1>
+          <h1 className="ml-8">Услуге које пружамо</h1>
         </div>
-        <div className="bg-gray-100 h-2/3 flex justify-center items-center text-start text-lg md:text-3xl pt-48 pb-24 md:px-16 px-8 ml-4 font-semibold">
+        <div className="bg-gray-100 h-2/3 flex justify-center items-center text-start text-lg md:text-3xl pt-48 pb-24 md:px-16 px-8 ml-4 font-light">
           <ul className="list-disc">
             <li>
               Саветовање и израда правилника о организацији и систематизацији
