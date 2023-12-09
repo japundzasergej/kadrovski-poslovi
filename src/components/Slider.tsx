@@ -10,8 +10,6 @@ const Slider = () => {
   const isDesktop = useMediaQuery('(min-width: 1040px)');
   return (
     <HeroSlider
-      height={isDesktop ? '100vh' : '20vh'}
-      width={'100%'}
       autoplay={{
         autoplayDuration: 4000,
         autoplayDebounce: 2000,
@@ -25,12 +23,8 @@ const Slider = () => {
       accessibility={{
         shouldSlideOnArrowKeypress: true,
       }}
-      manager={{
-        isMobile: !isDesktop ? false : true,
-      }}
-      className={`${!isDesktop && 'border-b border-black'}`}
     >
-      <Slide 
+      <Slide
         background={{
           backgroundImageSrc: legal1,
           backgroundImageAlt: 'legal1',

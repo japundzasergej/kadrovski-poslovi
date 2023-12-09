@@ -10,8 +10,7 @@ const MobileSlider = () => {
   const isDesktop = useMediaQuery('(min-width: 1040px)');
   return (
     <HeroSlider
-      height={isDesktop ? '100vh' : '20vh'}
-      width={'100%'}
+      height='20vh'
       autoplay={{
         autoplayDuration: 4000,
         autoplayDebounce: 2000,
