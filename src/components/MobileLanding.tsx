@@ -1,6 +1,5 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { GoChevronRight } from 'react-icons/go';
-import Slider from './Slider';
 import MobileSlider from './mobileSlider';
 
 const MobileLanding = () => {
