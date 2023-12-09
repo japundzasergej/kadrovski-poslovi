@@ -4,10 +4,8 @@ import legal1 from '../assets/mLegal1.jpg';
 import legal2 from '../assets/mLegal2.jpg';
 import legal3 from '../assets/mLegal3.jpg';
 import legal4 from '../assets/mLegal4.jpg';
-import useMediaQuery from '../hooks/useMediaQuery';
 
 const MobileSlider = () => {
-  const isDesktop = useMediaQuery('(min-width: 1040px)');
   return (
     <HeroSlider
       height='20vh'
