@@ -6,7 +6,7 @@ const Paragraph = ({ isMobile }: ParaProps) => {
   const mobileStyling =
     'bg-gray-100 h-2/3 flex justify-center items-center text-start text-lg md:text-3xl pt-48 pb-24 md:px-16 px-8 ml-4 font-light';
   const desktopStyling =
-    'bg-gray-100 h-2/3 flex justify-center items-center text-start text-2xl py-64 px-48';
+    'bg-gray-100 h-2/3 flex justify-center items-center text-start text-3xl py-64 px-48';
   return (
     <div className={isMobile ? mobileStyling : desktopStyling}>
       <ul className="list-disc">

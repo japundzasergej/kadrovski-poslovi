@@ -14,6 +14,7 @@ const MobileSlider = () => {
       height={isTablet ? '40vh' : '20vh'}
       autoplay={{
         autoplayDuration: 4000,
+
         autoplayDebounce: 2000,
       }}
       animations={{

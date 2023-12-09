@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
+import FormInput from '../components/FormInput';
 
 interface FormProps {
   name: string;
@@ -23,7 +24,7 @@ const Contact = () => {
     message: '',
   });
 
-  const isDesktop = useMediaQuery('(min-width: 1040px)');
+  const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const isValid = await trigger();
@@ -55,17 +56,15 @@ const Contact = () => {
           onSubmit={(e) => handleSubmit(e)}
           autoComplete="on"
         >
-          <label htmlFor="name" className="pb-2">
-            Име
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="px-2 md:py-4 border-2 rounded-md"
-            {...register('name', {
+          <FormInput
+            htmlFor="name"
+            name="name"
+            label="Име"
+            register={register}
+            registerOptions={{
               required: true,
               minLength: 3,
-            })}
+            }}
             value={user.name}
             onChange={handleChange}
           />
@@ -76,17 +75,15 @@ const Contact = () => {
                 'Име мора у себи садржати бар 3 слова.'}
             </p>
           )}
-          <label htmlFor="email" className="py-2">
-            И-мејл
-          </label>
-          <input
-            type="text"
-            id="email"
-            className="md:py-4 border-2 rounded-md"
-            {...register('email', {
+          <FormInput
+            htmlFor="email"
+            name="email"
+            label="И-мејл"
+            register={register}
+            registerOptions={{
               required: true,
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-            })}
+            }}
             value={user.email}
             onChange={handleChange}
           />
@@ -96,15 +93,14 @@ const Contact = () => {
               {errors.email.type === 'pattern' && 'Неодговарајући и-мејл.'}
             </p>
           )}
-          <label htmlFor="title" className="py-2">
-            Наслов поруке
-          </label>
-          <input
-            type="title"
-            className="md:py-4 border-2 rounded-md"
-            {...register('title', {
+          <FormInput
+            htmlFor="title"
+            name="title"
+            label="Наслов поруке"
+            register={register}
+            registerOptions={{
               required: true,
-            })}
+            }}
             value={user.title}
             onChange={handleChange}
           />
@@ -125,7 +121,7 @@ const Contact = () => {
             value={user.message}
             onChange={handleChange}
             className="border-2 rounded-md resize-none"
-          ></textarea>
+          />
           {errors.message && (
             <p className="text-red-700 mt-2">
               {errors.message.type === 'required' && 'Ово поље је обавезно.'}
