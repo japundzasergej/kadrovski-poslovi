@@ -20,7 +20,7 @@ const MobileSlider = () => {
         slidingAnimation: 'fade',
       }}
       controller={{
-        initialSlide: 2,
+        initialSlide: 4,
       }}
       accessibility={{
         shouldSlideOnArrowKeypress: true,
