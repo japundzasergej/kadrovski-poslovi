@@ -4,12 +4,14 @@ import legal2 from '../assets/mLegal2.jpg';
 import legal3 from '../assets/mLegal3.jpg';
 import legal4 from '../assets/mLegal4.jpg';
 import Slider from './Slider';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const MobileSlider = () => {
   const src = [legal1, legal2, legal3, legal4];
+  const isTablet = useMediaQuery('(min-width: 1024px)');
   return (
     <HeroSlider
-      height="20vh"
+      height={isTablet ? '40vh' : '20vh'}
       autoplay={{
         autoplayDuration: 4000,
         autoplayDebounce: 2000,
