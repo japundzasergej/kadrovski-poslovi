@@ -24,6 +24,7 @@ const Contact = () => {
     message: '',
   });
 
+  const isTablet = useMediaQuery('(min-width: 540px)');
   const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -114,7 +115,7 @@ const Contact = () => {
           </label>
           <textarea
             id="msg"
-            rows={isDesktop ? 10 : 5}
+            rows={isTablet ? 10 : 5}
             {...register('message', {
               required: true,
             })}
@@ -129,8 +130,8 @@ const Contact = () => {
           )}
           <button
             type="submit"
-            className={`mt-12 bg-button py-2 md:py-[0.75rem] text-white rounded-3xl hover:opacity-90 transition duration-300 shadow-sm shadow-black ${
-              isDesktop ? 'text-3xl' : 'md:text-3xl text-xl'
+            className={`mt-12 bg-button text-white rounded-3xl hover:opacity-90 transition duration-300 shadow-sm shadow-black ${
+              isDesktop ? 'text-3xl py-[0.75rem]' : 'text-xl md:text-3xl py-4'
             }`}
             disabled={isSubmitting}
           >
