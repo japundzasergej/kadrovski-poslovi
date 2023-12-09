@@ -48,7 +48,7 @@ const Contact = () => {
           Контакт
         </h1>
         <form
-          action={import.meta.env.VITE_FORM}
+          action="https://formspree.io/f/xbjvndqd"
           method="POST"
           target="_blank"
           className="flex flex-col text-2xl min-w-[90%] lg:min-w-[50%]"
