@@ -22,13 +22,10 @@ const MobileSlider = () => {
       controller={{
         initialSlide: 4,
       }}
-      accessibility={{
-        shouldSlideOnArrowKeypress: true,
-      }}
       manager={{
-        isMobile: !isDesktop ? false : true,
+        isMobile: true,
       }}
-      className={`${!isDesktop && 'border-b border-black'}`}
+      className="border-b border-black"
     >
       <Slide
         background={{
