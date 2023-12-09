@@ -2,7 +2,7 @@ const DesktopAbout = () => {
   const desktopAbout = (
     <section className="flex w-full">
       <article>
-        <div className="bg-black h-1/3 items-center text-center text-white flex justify-start text-6xl w-[200%] pb-24 font-tenor">
+        <div className="bg-black h-1/3 items-center text-center text-white flex justify-start text-6xl w-[200%] py-48 font-tenor">
           <h1 className="ml-20">Услуге које пружамо</h1>
         </div>
         <div className="bg-gray-100 h-2/3 flex justify-center items-center text-start text-2xl py-64 px-48">
