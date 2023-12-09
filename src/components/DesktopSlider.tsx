@@ -1,15 +1,14 @@
 import HeroSlider from 'hero-slider/dist/HeroSlider';
-import legal1 from '../assets/mLegal1.jpg';
-import legal2 from '../assets/mLegal2.jpg';
-import legal3 from '../assets/mLegal3.jpg';
-import legal4 from '../assets/mLegal4.jpg';
 import Slider from './Slider';
+import legal1 from '../assets/legal1.jpg';
+import legal2 from '../assets/legal2.jpg';
+import legal3 from '../assets/legal3.jpg';
+import legal4 from '../assets/legal4.jpg';
 
-const MobileSlider = () => {
+const DesktopSlider = () => {
   const src = [legal1, legal2, legal3, legal4];
   return (
     <HeroSlider
-      height="20vh"
       autoplay={{
         autoplayDuration: 4000,
         autoplayDebounce: 2000,
@@ -18,15 +17,14 @@ const MobileSlider = () => {
         slidingAnimation: 'fade',
       }}
       controller={{
-        initialSlide: 4,
+        initialSlide: 2,
       }}
-      manager={{
-        isMobile: true,
+      accessibility={{
+        shouldSlideOnArrowKeypress: true,
       }}
-      className="border-b border-black"
     >
       <Slider src={src} />
     </HeroSlider>
   );
 };
-export default MobileSlider;
+export default DesktopSlider;

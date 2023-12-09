@@ -1,6 +1,6 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { GoChevronRight } from 'react-icons/go';
-import Slider from './Slider';
+import DesktopSlider from './DesktopSlider';
 
 const DesktopLanding = () => {
   const title = 'Кадровски Послови';
@@ -25,7 +25,7 @@ const DesktopLanding = () => {
         </div>
       </div>
       <div className="w-1/2">
-        <Slider />
+        <DesktopSlider />
       </div>
     </section>
   );
