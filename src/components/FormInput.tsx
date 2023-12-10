@@ -25,7 +25,7 @@ const FormInput = ({
       <input
         type="text"
         id={htmlFor}
-        className="px-2 md:py-4 border-2 rounded-md md:text-2xl text-lg"
+        className="px-2 md:py-4 py-2 border-2 rounded-md md:text-2xl text-lg"
         {...register(name, registerOptions)}
         {...props}
       />
