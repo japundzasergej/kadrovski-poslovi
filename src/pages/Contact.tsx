@@ -121,7 +121,7 @@ const Contact = () => {
             })}
             value={user.message}
             onChange={handleChange}
-            className="border-2 rounded-md resize-none"
+            className="border-2 rounded-md resize-none md:text-2xl text-lg px-2 py-2"
           />
           {errors.message && (
             <p className="text-red-700 mt-2">
