@@ -13,7 +13,7 @@ const App = () => {
       <main className="bg-gray-100">
         <Landing />
         <About />
-        <div className="bg-black h-[2px] w-[120%]"></div>
+        <div className="bg-black h-[2px] w-full"></div>
         <Contact />
       </main>
       <footer>

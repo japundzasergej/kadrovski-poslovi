@@ -7,18 +7,16 @@ interface SliderProps {
 const Slider = ({ src }: SliderProps) => {
   return (
     <>
-      {src.map((item) => {
-        return (
-          <div key={item}>
-            <Slide
-              background={{
-                backgroundImageSrc: item,
-                backgroundImageAlt: item,
-              }}
-            />
-          </div>
-        );
-      })}
+      {src.map((item) => (
+        <div key={item}>
+          <Slide
+            background={{
+              backgroundImageSrc: item,
+              backgroundImageAlt: item,
+            }}
+          />
+        </div>
+      ))}
     </>
   );
 };
